@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <Description>Ymf825 extensions for Japari Orgel</Description>
+    <Authors>Nanase</Authors>
+    <Copyright>Copyright © 2019 Nanase</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/nanase/ymf825-japariorgel</PackageProjectUrl>
+    <PackageTags>YMF825</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/nanase/ymf825-japariorgel.git</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Ymf825.JapariOrgel</PackageId>
+    <Product>Ymf825.JapariOrgel</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DefineConstants>TRACE;DEBUG;NET47</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ymf825" Version="2.0.0" />
+  </ItemGroup>
+</Project>
